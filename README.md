@@ -21,12 +21,14 @@ Depois acesse `http://localhost:3000`.
 - `src/app/globals.css`: design system, paleta, animacoes e responsividade.
 - `src/data/projects.ts`: dados dos projetos.
 
-## Personalizacao
-
-Atualize links reais de GitHub, LinkedIn e email em `src/app/page.tsx` e `src/data/projects.ts`.
-
 
 git clone URL_DO_SEU_REPOSITORIO
 cd nome-da-pasta
 npm install
 npm run dev
+
+## Personalizacao
+
+Atualize links reais de GitHub, LinkedIn e email em `src/app/page.tsx` e `src/data/projects.ts`.
+
+
