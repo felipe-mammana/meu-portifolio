@@ -82,7 +82,7 @@ export const projects: Project[] = [
     icon: MonitorCog,
   },
   {
-    name: "Empregamento",
+    name: "Empregameto",
     kind: "Opportunity System",
     description:
       "Projeto relacionado a empregabilidade, vagas e organização de oportunidades, estruturado para facilitar acompanhamento e tomada de decisão.",
