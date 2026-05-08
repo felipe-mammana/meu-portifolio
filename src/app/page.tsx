@@ -37,7 +37,7 @@ const stackGroups = [
   {
     title: "Backend & Systems",
     icon: ServerCog,
-    items: ["PHP", "Python", "FastAPI", "MySQL", "MariaDB", "APIs", "Regras de negocio"],
+    items: ["PHP", "Python", "FastAPI", "MySQL", "MariaDB", "APIs", "Regras de negócio"],
   },
   {
     title: "Desktop",
@@ -58,10 +58,10 @@ const stackGroups = [
 
 const labCards = [
   { title: "IA Experiments", icon: BrainCircuit, text: "Testes com chat, fluxos inteligentes e assistentes aplicados a sistemas." },
-  { title: "Automation Ideas", icon: Zap, text: "Ideias para reduzir tarefas repetitivas e organizar informacoes internas." },
-  { title: "Interface Concepts", icon: Sparkles, text: "Prototipos de interfaces modernas para produtos e paineis tecnicos." },
-  { title: "Backend Studies", icon: Database, text: "Estudos de arquitetura, dados, regras de negocio e integracoes." },
-  { title: "Mini Tools", icon: Bot, text: "Ferramentas pequenas para resolver problemas especificos com velocidade." },
+  { title: "Automation Ideas", icon: Zap, text: "Ideias para reduzir tarefas repetitivas e organizar informações internas." },
+  { title: "Interface Concepts", icon: Sparkles, text: "Protótipos de interfaces modernas para produtos e painéis técnicos." },
+  { title: "Backend Studies", icon: Database, text: "Estudos de arquitetura, dados, regras de negócio e integrações." },
+  { title: "Mini Tools", icon: Bot, text: "Ferramentas pequenas para resolver problemas específicos com velocidade." },
 ];
 
 const buildingItems = [
@@ -70,7 +70,7 @@ const buildingItems = [
   "Evoluindo em PHP, Python, MySQL e JavaScript",
   "Explorando IA aplicada a sistemas",
   "Melhorando projetos reais",
-  "Construindo portfolio profissional",
+  "Construindo portfólio profissional",
 ];
 
 function BootScreen() {
@@ -230,7 +230,7 @@ function ProjectScreenshots({
             </div>
           </div>
           {hasMultipleScreenshots ? (
-            <button aria-label="Proximo print" className="lightbox-arrow right" onClick={(event) => { event.stopPropagation(); goToNext(); }} type="button">
+            <button aria-label="Próximo print" className="lightbox-arrow right" onClick={(event) => { event.stopPropagation(); goToNext(); }} type="button">
               <ChevronRight size={24} />
             </button>
           ) : null}
@@ -283,7 +283,7 @@ function ProjectScreenshots({
               <button aria-label="Print anterior" onClick={(event) => { event.stopPropagation(); goToPrevious(); }} type="button">
                 <ChevronLeft size={18} />
               </button>
-              <button aria-label="Proximo print" onClick={(event) => { event.stopPropagation(); goToNext(); }} type="button">
+              <button aria-label="Próximo print" onClick={(event) => { event.stopPropagation(); goToNext(); }} type="button">
                 <ChevronRight size={18} />
               </button>
             </div>
@@ -373,7 +373,7 @@ export default function Home() {
             transition={{ delay: 0.15, duration: 0.8 }}
           >
             <p className="mb-5 font-mono text-sm uppercase tracking-[0.3em] text-cyan-200/80">
-              Bem-vindo ao meu portfolio
+              Bem-vindo ao meu portfólio
             </p>
             <TypedName />
             <div className="mt-8 max-w-2xl space-y-3 text-xl leading-8 text-zinc-300 sm:text-2xl">
@@ -391,7 +391,7 @@ export default function Home() {
               </a>
               <a className="button-secondary" href="/curriculo.pdf" download>
                 <Download size={18} />
-                Curriculo
+                Currículo
               </a>
               <a className="button-secondary" href="#systems">
                 <ArrowRight size={18} />
@@ -432,14 +432,14 @@ export default function Home() {
       <section id="sobre" className="section-wrap">
         <SectionHeader
           eyebrow="About"
-          title="Tecnico, criativo e orientado a sistemas reais."
-          text="Tecnico em Desenvolvimento de Sistemas, cursa Analise e Desenvolvimento de Sistemas e vem construindo uma base solida para atuar como desenvolvedor backend/fullstack."
+          title="Técnico, criativo e orientado a sistemas reais."
+          text="Técnico em Desenvolvimento de Sistemas, cursa Análise e Desenvolvimento de Sistemas e vem construindo uma base sólida para atuar como desenvolvedor backend/fullstack."
         />
         <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-3">
           {[
-            ["Backend focus", "Foco em logica, banco de dados, regras de negocio e sistemas internos bem estruturados."],
-            ["Fullstack practice", "Tambem cria interfaces modernas com JavaScript, CSS e experiencias digitais responsivas."],
-            ["Real impact", "Desenvolve projetos reais para a empresa atual, aplicando programacao para resolver problemas do dia a dia."],
+            ["Backend focus", "Foco em lógica, banco de dados, regras de negócio e sistemas internos bem estruturados."],
+            ["Fullstack practice", "Também cria interfaces modernas com JavaScript, CSS e experiências digitais responsivas."],
+            ["Real impact", "Desenvolve projetos reais para a empresa atual, aplicando programação para resolver problemas do dia a dia."],
           ].map(([title, text]) => (
             <motion.article key={title} className="premium-card" whileHover={{ y: -6 }}>
               <Code2 className="mb-5 text-violet-300" />
@@ -453,8 +453,8 @@ export default function Home() {
       <section id="systems" className="section-wrap">
         <SectionHeader
           eyebrow="Systems Built"
-          title="Projetos com cara de produto, regra de negocio e utilidade real."
-          text="Uma selecao de sistemas, plataformas e experimentos em evolucao, com foco em resolver problemas concretos."
+          title="Projetos com cara de produto, regra de negócio e utilidade real."
+          text="Uma seleção de sistemas, plataformas e experimentos em evolução, com foco em resolver problemas concretos."
         />
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-2">
           {projects.map((project) => (
@@ -495,7 +495,7 @@ export default function Home() {
       </section>
 
       <section id="stack" className="section-wrap">
-        <SectionHeader eyebrow="Stack" title="Painel tecnico para construir, integrar e evoluir sistemas." />
+        <SectionHeader eyebrow="Stack" title="Painel técnico para construir, integrar e evoluir sistemas." />
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-4">
           {stackGroups.map((group) => (
             <motion.article key={group.title} className="premium-card" whileHover={{ y: -5 }}>
@@ -514,8 +514,8 @@ export default function Home() {
       <section id="lab" className="section-wrap">
         <SectionHeader
           eyebrow="Lab"
-          title="Experimentos tecnicos, IA e pequenas ferramentas em movimento."
-          text="Um espaco para testar ideias, estudar arquitetura, prototipar interfaces e transformar curiosidade em software."
+          title="Experimentos técnicos, IA e pequenas ferramentas em movimento."
+          text="Um espaço para testar ideias, estudar arquitetura, prototipar interfaces e transformar curiosidade em software."
         />
         <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-2 lg:grid-cols-5">
           {labCards.map((card) => (
@@ -529,7 +529,7 @@ export default function Home() {
       </section>
 
       <section className="section-wrap">
-        <SectionHeader eyebrow="Currently Building" title="Evolucao continua, com foco claro." />
+        <SectionHeader eyebrow="Currently Building" title="Evolução contínua, com foco claro." />
         <div className="mx-auto max-w-4xl rounded-[8px] border border-white/10 bg-white/[0.035] p-4 backdrop-blur">
           {buildingItems.map((item, index) => (
             <motion.div
@@ -549,17 +549,17 @@ export default function Home() {
       </section>
 
       <section className="section-wrap">
-        <SectionHeader eyebrow="Experience" title="Programacao aplicada em ambiente profissional." />
+        <SectionHeader eyebrow="Experience" title="Programação aplicada em ambiente profissional." />
         <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[.8fr_1.2fr]">
           <div className="premium-card">
             <BriefcaseBusiness className="mb-5 text-violet-300" />
-            <h3 className="mb-3 text-2xl font-semibold text-ice">Experiencia atual</h3>
+            <h3 className="mb-3 text-2xl font-semibold text-ice">Experiência atual</h3>
             <p className="leading-7 text-zinc-400">
-              Atualmente atuo desenvolvendo solucoes e sistemas internos para minha empresa atual, aplicando programacao para resolver problemas reais do dia a dia, automatizar processos e melhorar a organizacao das informacoes.
+              Atualmente atuo desenvolvendo soluções e sistemas internos para minha empresa atual, aplicando programação para resolver problemas reais do dia a dia, automatizar processos e melhorar a organização das informações.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            {["Tecnico em Desenvolvimento de Sistemas", "Cursando ADS", "Projetos reais em ambiente profissional", "Foco em backend e sistemas"].map((item) => (
+            {["Técnico em Desenvolvimento de Sistemas", "Cursando ADS", "Projetos reais em ambiente profissional", "Foco em backend e sistemas"].map((item) => (
               <div key={item} className="experience-chip">
                 <CheckCircle2 size={18} />
                 {item}
@@ -573,7 +573,7 @@ export default function Home() {
         <SectionHeader
           eyebrow="Contato"
           title="Vamos construir algo inteligente?"
-          text="Aberto para conexoes profissionais, projetos, oportunidades e conversas sobre sistemas, backend, automacao e IA."
+          text="Aberto para conexões profissionais, projetos, oportunidades e conversas sobre sistemas, backend, automação e IA."
         />
         <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-3">
           <a className="button-primary" href="mailto:felipe.mammana@email.com">

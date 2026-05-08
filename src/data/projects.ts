@@ -18,15 +18,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Gestao e Controle de Estoque",
+    name: "Gestão e Controle de Estoque",
     kind: "Corporate Inventory System",
     description:
-      "Sistema web corporativo para controle de estoque de TI, patrimonio em uso, movimentacoes, usuarios, localizacoes e exportacoes para BI. Projeto real de operacao interna com regras de negocio, auditoria, notificacoes por e-mail, filtros, KPIs e controle por perfil.",
+      "Sistema web corporativo para controle de estoque de TI, patrimônio em uso, movimentações, usuários, localizações e exportações para BI. Projeto real de operação interna com regras de negócio, auditoria, notificações por e-mail, filtros, KPIs e controle por perfil.",
     stack: ["PHP 8.x", "MariaDB", "MySQL", "Composer", "PHPMailer", "JavaScript", "CSS3"],
     screenshots: [
-      { title: "Dashboard de estoque" },
-      { title: "Movimentacoes" },
-      { title: "Exportacoes BI" },
+      { title: "Em uso", image: "/prints/estoque-emuso.jpeg" },
+      { title: "Principal", image: "/prints/estoque-principal.jpeg" },
+      { title: "Exportações BI", image: "/prints/estoque-dashboard.jpeg" },
     ],
     status: "Projeto real",
     github: "https://github.com/felipe-mammana/projeto-gestao-estoque/",
@@ -37,11 +37,11 @@ export const projects: Project[] = [
     name: "MVP Marmoraria",
     kind: "AI Business Platform",
     description:
-      "Plataforma fullstack para gestao comercial de marmorarias, transformando pedidos por audio ou texto em orcamentos estruturados. Integra OpenAI para transcricao e interpretacao, painel administrativo, catalogo de materiais, relatorios comerciais e geracao de PDF.",
-    stack: ["PHP 8.2", "Python 3.11", "FastAPI", "MySQL 8.4", "Docker Compose", "OpenAI API", "ReportLab"],
+      "Plataforma fullstack para gestão comercial de marmorarias, transformando pedidos por áudio ou texto em orçamentos estruturados. Integra OpenAI para transcrição e interpretação, painel administrativo, catálogo de materiais, relatórios comerciais e geração de PDF.",
+    stack: ["PHP 8.2", "Python 3.11", "FastAPI", "MySQL 8.4", "OpenAI API", "ReportLab"],
     screenshots: [
-      { title: "Painel de orcamentos", image: "/prints/marmoraria-orcamento.jpeg" },
-      { title: "Revisao assistida", image: "/prints/marmoraria-edit.jpeg" },
+      { title: "Painel de orçamentos", image: "/prints/marmoraria-orcamento.jpeg" },
+      { title: "Revisão assistida", image: "/prints/marmoraria-edit.jpeg" },
       { title: "Dashboard comercial", image: "/prints/marmoraria-dashboard.jpeg" },
     ],
     status: "MVP funcional",
@@ -53,43 +53,43 @@ export const projects: Project[] = [
     name: "ALTUS - Plataforma de Ajuda TEA",
     kind: "Clinical Support Platform",
     description:
-      "Plataforma web para acompanhamento de pacientes com TEA, conectando familias, pacientes e profissionais de saude. Inclui exercicios terapeuticos, consultas, progresso, feedbacks, chat privado, comunidade, pagamentos PIX e paineis responsivos para pacientes e medicos.",
+      "Plataforma web para acompanhamento de pacientes com TEA, conectando famílias, pacientes e profissionais de saúde. Inclui exercícios terapêuticos, consultas, progresso, feedbacks, chat privado, comunidade, pagamentos PIX e painéis responsivos para pacientes e médicos.",
     stack: ["PHP 8", "MySQL/MariaDB", "JavaScript ES6", "HTML5", "CSS3", "Composer", "PHPMailer"],
     screenshots: [
       { title: "Dashboard paciente" },
-      { title: "Painel medico" },
+      { title: "Painel médico" },
       { title: "Chat e comunidade" },
     ],
     status: "TCC / Web Platform",
     github: "https://github.com/felipe-mammana/plataforma-de-ajuda-TEA",
-    highlight: "Paciente + Medico",
+    highlight: "Paciente + Médico",
     icon: HeartHandshake,
   },
   {
     name: "ALTUS Admin",
     kind: "Desktop Admin System",
     description:
-      "Aplicacao desktop administrativa para operar dados centrais do ALTUS, incluindo usuarios, responsaveis, medicos, exercicios, progresso, relatorios e pagamentos. Usa interface PyQt5 com telas do Qt Designer e acesso direto ao banco MySQL/MariaDB.",
+      "Aplicação desktop administrativa para operar dados centrais do ALTUS, incluindo usuários, responsáveis, médicos, exercícios, progresso, relatórios e pagamentos. Usa interface PyQt5 com telas do Qt Designer e acesso direto ao banco MySQL/MariaDB.",
     stack: ["Python", "PyQt5", "Qt Designer", "MySQL", "MariaDB", "Matplotlib", "SMTP"],
     screenshots: [
       { title: "Menu administrativo" },
-      { title: "Gestao de exercicios" },
-      { title: "Relatorios mensais" },
+      { title: "Gestão de exercícios" },
+      { title: "Relatórios mensais" },
     ],
     status: "Admin Desktop",
     github: "https://github.com/felipe-mammana/plataforma-de-ajuda-TEA-adm",
-    highlight: "Modulo administrativo",
+    highlight: "Módulo administrativo",
     icon: MonitorCog,
   },
   {
-    name: "Empregameto",
+    name: "Empregamento",
     kind: "Opportunity System",
     description:
-      "Projeto relacionado a empregabilidade, vagas e organizacao de oportunidades, estruturado para facilitar acompanhamento e tomada de decisao.",
+      "Projeto relacionado a empregabilidade, vagas e organização de oportunidades, estruturado para facilitar acompanhamento e tomada de decisão.",
     stack: ["JavaScript", "CSS", "HTML"],
     screenshots: [
       { title: "Painel de vagas" },
-      { title: "Organizacao" },
+      { title: "Organização" },
     ],
     status: "Concept",
     github: "https://github.com/felipe-mammana/empregameto",
@@ -99,8 +99,8 @@ export const projects: Project[] = [
     name: "Projeto Chat de Treinamento",
     kind: "AI Interaction",
     description:
-      "Projeto com foco em chat, treinamento, explorando automacao, interacao inteligente e fluxos conversacionais aplicados a sistemas.",
-    stack: ["IA", "Automacao", "Chat"],
+      "Projeto com foco em chat, treinamento, explorando automação, interação inteligente e fluxos conversacionais aplicados a sistemas.",
+    stack: ["IA", "Automação", "Chat"],
     screenshots: [
       { title: "Chat inteligente" },
       { title: "Fluxo de treino" },
